@@ -1,18 +1,20 @@
-// src/App.jsx
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-// 引入元件
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+{/* 引入元件 */}
 import Home from './pages/Home';
+import Research from './pages/Research';
+import Projects from './pages/Projects';
 import About from './pages/About';
+
+
 
 function App() {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
-      <nav>
-        <Link to="/">首頁</Link> | <Link to="/about">關於</Link>
-      </nav>
-
       <Routes>
+        {/* 個路由連結目的指定 */}
         <Route path="/" element={<Home />} />
+        <Route path="/research" element={<Research />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
