@@ -1,0 +1,104 @@
+/* 網頁整體 */
+body {
+  margin: 0;
+  background-image: url('./public/img/oranges.png'); /* 背景圖片 */
+  background-size: 100%;        /* 圖片覆蓋整個畫面 */
+  background-repeat: repeat;  /* 不重複/重複貼圖 */
+  background-position: center;   /* 圖片置中 */
+}
+
+/* 介紹區與導覽列整體 */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  /* background-color: rgb(255, 187, 92); */
+}
+
+/* 導覽列 */
+.about-nav {
+  margin-bottom: 1rem; /*下方與其他元件的間距*/
+  border: 5px solid rgb(255, 136, 0);
+  padding: 1rem;
+  display: flex;
+  gap: 1rem; /*連結之間的間隔*/
+  /* background-color: white; */
+}
+
+/* 連結 */
+.about-nav a {
+  text-decoration: none;
+  color: rgb(255, 105, 0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 滑鼠移到連結時的動畫 */
+.about-nav a:hover {
+  text-decoration: underline; /* 可選：滑鼠移上時仍顯示底線 */
+}
+
+/* 介紹區整體 */
+.about-box {
+  display: flex;
+  border: 5px solid rgb(255, 136, 0);
+  padding: 1.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 700px;
+  /* background-color: white; */
+}
+
+/* 兩class共用屬性 */
+.about-box, .about-nav{
+    background-color: rgb(255, 251, 211);
+}
+
+/* 介紹區內文字 */
+.about-text {
+  flex: 1;
+}
+
+/* 圖片p.png */
+.about-image {
+  width: 300px;
+  height: auto;
+  margin-left: 2rem;
+  object-fit: contain;
+}
+
+/* 興趣區整體 */
+.about-section {
+  margin-bottom: 1.5rem;
+}
+
+/* 標題 */
+.about-title {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 長方形 */
+.orange-bar {
+  width: 8px;
+  height: 1em;
+  background-color: orange;
+  margin-right: 0.5rem;
+}
+
+/* 清單 */
+.about-list {
+  color: #003366;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
