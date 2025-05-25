@@ -1,10 +1,11 @@
 /* 網頁整體 */
-body {
-  margin: 0;
-  background-image: url('./public/img/oranges.png'); /* 背景圖片 */
-  background-size: 100%;        /* 圖片覆蓋整個畫面 */
-  background-repeat: repeat;  /* 不重複/重複貼圖 */
-  background-position: center;   /* 圖片置中 */
+.about-page {
+  background-image: url('/img/oranges.png');
+  background-size: cover; /* 覆蓋整個頁面 */
+  background-repeat: no-repeat; /*不重複*/
+  background-position: center; /*置中*/
+  min-height: 100vh;
+  padding: 2rem;
 }
 
 /* 介紹區與導覽列整體 */
@@ -12,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 2rem;
+  padding: 0 2rem;
   max-width: 800px;
   margin: 0 auto;
   box-sizing: border-box;
