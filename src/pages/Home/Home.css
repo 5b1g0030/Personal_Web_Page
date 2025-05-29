@@ -1,5 +1,8 @@
 /* 整體頁面 */
 .home-container {
+  background-image: url('./img/background/background3.webp');
+  background-size: cover; /* 覆蓋整個頁面 */
+  background-repeat: no-repeat; /* 不重複 */
   display: flex;
   flex-direction: column;
   align-items: center;     /* ⬅️ 水平置中（因為 column） */
@@ -10,6 +13,7 @@
 
   /* 網站標題 */
   .home-title {
+    color: white;
     font-size: 4rem;
     margin-bottom: 2rem; /*底部間隔*/
   }
@@ -22,7 +26,7 @@
   
   /* 按鈕外觀和動畫 */
   .nav-button {
-    background-color: #7b2cbf; /* 顏色 */
+    background-color: #9d4ae5; /* 顏色 */
     color: white;
     padding: 1.5rem 3rem; /*按鈕寬高度*/
     margin: 0 15px; /*按鈕間隔*/
@@ -37,6 +41,6 @@
   /* 滑鼠移動按鈕上時的動畫 */
   .nav-button:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(123, 44, 191, 0.6);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   }
   

@@ -1,9 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 {/* 引入元件 */}
-import Home from './pages/Home';
-import Research from './pages/Research';
-import Projects from './pages/Projects';
-import About from './pages/About';
+import Home from './pages/Home/Home';
+import Research from './pages/Research/Research';
+import Projects from './pages/Projects/Projects';
+import About from './pages/About/About';
+import Information from './pages/Research/Information';
+import RasberryPi from './pages/Research/RasberryPi';
 
 
 
@@ -16,6 +18,8 @@ function App() {
         <Route path="/research" element={<Research />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
+        <Route path="/information" element={<Information />} />
+        <Route path="/rasberrypi" element={<RasberryPi />} />
       </Routes>
     //</BrowserRouter>
   );
