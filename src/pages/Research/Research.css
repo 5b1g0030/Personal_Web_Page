@@ -1,6 +1,6 @@
 /* 背景圖片 */
 .research-bg {
-  background-image: url('./img/background/background6.jpg'); /* 背景圖片 */
+  background-image: url('/img/background/background6.jpg'); /* 背景圖片 */
   background-size: cover; /* 覆蓋整個頁面 */
   background-repeat: no-repeat; /*不重複*/
   background-position: center; /*置中*/

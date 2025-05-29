@@ -1,6 +1,6 @@
 /* 整體頁面 */
 .home-container {
-  background-image: url('./img/background/background3.webp');
+  background-image: url('/img/background/background3.webp');
   background-size: cover; /* 覆蓋整個頁面 */
   background-repeat: no-repeat; /* 不重複 */
   display: flex;
