@@ -48,68 +48,89 @@
     text-decoration: underline;
 }
 
+/* 網頁內容整體位置 */
 .info-main {
   display: flex;
   align-items: flex-start;
   margin-left: 32px;
 }
 
+/* 全標題(右拉選單) */
 .info-titles {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
+/* 標題與文字區域 */
 .info-row {
   display: flex;
   align-items: center;
 }
 
+/* 標題(右拉選單) */
 .info-title {
-  border: 2px solid #2ecc40;
+  border: 2px solid #25a835;
   background: #eaffea;
-  color: #218c2c;
+  color: #2ec33d;
   padding: 24px 12px;
-  writing-mode: vertical-rl;
+  writing-mode: vertical-rl; /* 垂直文字 */
   text-align: center;
   font-weight: bold;
   font-size: 20px;
   border-radius: 8px;
   cursor: pointer;
-  min-height: 120px;
-  min-width: 36px;
+  height: 200px;
+  min-width: 30px;
   transition: background 0.2s, box-shadow 0.2s;
-  box-shadow: none;
+  /* box-shadow: none; */
 }
 
+/* 右拉選單點擊動畫 */
 .info-title.active {
   box-shadow: 0 0 8px #2ecc40;
 }
 
+/* 右拉選單文字區域 */
 .slide-content {
   border: 2px solid #2ecc40;
   border-left: none;
   background: #eaffea;
   margin-left: 0;
-  border-radius: 8px;
-  min-width: 220px;
-  padding: 24px 20px;
+  border-radius: 0 8px 8px 0;
+  min-width: 140vh;
+  /* max-width: 0; */
+  max-height: 190px;
+  padding: 0 20px 45px 20px;
   font-size: 16px;
   color: #218c2c;
-  /* box-shadow: 0 0 8px #2ecc40; */
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 0;
   overflow: hidden;
-  max-width: 0;
-  opacity: 0;
+  opacity: 0; /*隱藏*/
   pointer-events: none;
   transition: max-width 0.4s cubic-bezier(.4,2,.6,1), opacity 0.3s;
   white-space: normal;
 }
 
+/* 文字區域整體排版(全項目與文字內容) */
+.slide-content-divRow{
+    display: flex;
+    justify-items: row;
+    gap: 32px;
+}
+
+/* 文字區域整體排版(項目與文字內容) */
+.slide-content-divCol{
+    display: flex;
+    justify-items: column;
+    gap: 32px;
+}
+
+/* 文字區域展開 */
 .slide-content.open {
-  max-width: 320px;
-  opacity: 1;
+  max-width: 100vh;
+  opacity: 1; /*顯示*/
   pointer-events: auto;
 }
