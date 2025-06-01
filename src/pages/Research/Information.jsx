@@ -77,13 +77,68 @@ const titles = [
         </div>
     </>
    },
-  { key: "image", label: "影像處理技術", content: "這裡介紹影像處理技術相關內容。" },
-  { key: "design", label: "設計與優化", content: "這裡介紹設計與優化相關內容。" },
+  { key: "image", label: "影像處理", content:
+    <>
+      <h3>📌5. 影像處理</h3>
+        <div className="slide-content-divRow">
+          <div className="silde-content-divCol">
+            <p style={{fontWeight: "bold"}}>✅影像擷取（Image Acquisition）</p>
+              使用攝影機或感測器從環境中取得原始影像。
+          </div>
+          <div className="silde-content-divCol">
+            <p style={{fontWeight: "bold"}}>✅影像前處理（Image Preprocessing）</p>
+              包含去雜訊、增強對比、灰階化、邊緣檢測等，以提高後續辨識或分析的準確性。
+          </div>
+          <div className="silde-content-divCol">
+            <p style={{fontWeight: "bold"}}>✅物件偵測與辨識（Object Detection and Recognition）</p>
+              判斷影像中有哪些物體、物體的位置、類別，例如使用卷積神經網路（CNN）進行分類。
+          </div>          
+          <div className="silde-content-divCol">
+            <p style={{fontWeight: "bold"}}>✅特徵提取與追蹤（Feature Extraction and Tracking）</p>
+              擷取影像中有用的特徵（如角點、邊緣、形狀），並追蹤其隨時間的變化，用於導航或動作判斷。
+          </div>          
+        </div>
+    </>
+   },
+  { key: "design", label: "設計與優化", content:
+    <>
+      <h3>📌 4. 設計與體驗優化</h3>
+        <div className="slide-content-divRow">
+          <div className="silde-content-divCol">
+            <p style={{fontWeight: "bold"}}>✅ 外觀設計</p>
+              3D 模型設計 (Blender、Fusion 360)。
+              材質選擇與可製作性 (例如 3D 列印或 CNC 加工)。
+          </div>
+          <div className="silde-content-divCol">
+            <p style={{fontWeight: "bold"}}>✅ 互動設計</p>
+              擬人化設計 (可愛度提升的表情、動作、聲音)。
+              個性化設定與自訂功能。
+          </div>
+          <div className="silde-content-divCol">
+            <p style={{fontWeight: "bold"}}>✅ 使用者體驗 (UX)</p>
+              簡單易用的設定介面。
+              長期陪伴的舒適感 (例如學習用戶的習慣或給予適當回應)。
+          </div>          
+          <div className="silde-content-divCol">
+            <p style={{fontWeight: "bold"}}>✅ 行為規劃與決策系統</p>
+              有限狀態機 (FSM)
+              行為樹 (Behavior Tree)
+              強化學習 (Reinforcement Learning)
+          </div>          
+        </div>
+    </>
+   },
 ];
 
 function Information() {
+  // openkey: 紀錄目前哪個標題被展開(key)
+  // setOpenKey(): 一個函式，用來改變openkey的值
+  // useState(): 一個函式，設定openkey的初始值(null)
+
+  // const [狀態值, 設定狀態的函式] = useState(初始值);
   const [openKey, setOpenKey] = useState(null);
 
+  // 紀錄使用者點選的標題
   const handleTitleClick = (key) => {
     setOpenKey(openKey === key ? null : key);
   };
@@ -101,18 +156,20 @@ function Information() {
         {/* 標題與內容 */}
         <div className="info-main">
           <div className="info-titles">
+            {/* 把titles的資料取出來給item，再依序處理成網面上的右拉選單 */}
             {titles.map((item) => (
               <div key={item.key} className="info-row">
+                {/* 條件class: 如果該標題被點擊，在info-title後面加active，達成發出光暈的效果 */}
                 <div
                   className={`info-title${openKey === item.key ? " active" : ""}`}
                   onClick={() => handleTitleClick(item.key)}
                 >
-                  {item.label}
+                  {item.label} {/* 選單標題 */}
                 </div>
                 <div
                   className={`slide-content${openKey === item.key ? " open" : ""}`}
                 >
-                  {item.content}
+                  {item.content} {/* 選單文字內容 */}
                 </div>
               </div>
             ))}
