@@ -32,13 +32,6 @@ function Research() {
               <div>關於可能會用到的技術</div>
             </div>
           </div>
-          <div className="research-section">
-            <img src="./img/rasberryPi/rasberryPi5.jpg" alt="rasberryPi5" className="research-img" />
-            <div>
-              <Link to="/rasberrypi" className="research-title research-title-link">樹梅派介紹</Link>
-              <div>關於樹梅派</div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
