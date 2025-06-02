@@ -1,5 +1,44 @@
+import React, { useState } from "react";
+import { Link } from 'react-router-dom';
+import "./Projects.css"; // 引用css
+
 function Projects() {
-    return <h2>這是「其他專案」頁面</h2>;
-  }
-  export default Projects;
-  
+  const [iframeSrc, setIframeSrc] = useState("");
+  const defaultImg = './img/background/background1.webp';
+
+  return (
+    <div className="project-bg">
+      <nav className="nav-link">
+        <Link to="/" className="link-button">Home</Link>
+        <Link to="/research" className="link-button">Research</Link>
+        <Link to="/about" className="link-button">About</Link>
+      </nav>
+      {/* 專題導覽列 */}
+      <nav className="button-pad">
+        <a className="a-button" onClick={() => setIframeSrc("https://5b1g0030.github.io/20250320_JavaScript/game.html")}>試管倒水</a>
+        <a className="a-button" onClick={() => setIframeSrc("https://5b1g0030.github.io/React_calculator/")}>計算機</a>
+        <a className="a-button" onClick={() => setIframeSrc("https://5b1g0030.github.io/20250320_JavaScript/homework.html")}>9*9乘法表</a>
+        <a className="a-button" onClick={() => setIframeSrc("https://www.bing.com")}>井字遊戲</a>
+      </nav>
+      <div className="gamepad-display">
+        {/* 當iframeSrc */}
+        {iframeSrc ? (
+          <iframe
+            src={iframeSrc}
+            title="內容顯示"
+            width="100%"
+            height="100%"
+            style={{ border: "none", borderRadius: "15px", backgroundSize: "10px" }}
+          />
+        ) : (
+          <img
+            src={defaultImg}
+            alt="預設背景"
+            style={{width: "100%", height: "100%", objectFit: "cover", borderRadius: "15px"}}
+          />
+        )}
+      </div>
+    </div>
+  );
+}
+export default Projects;
