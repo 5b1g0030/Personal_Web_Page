@@ -31,7 +31,7 @@
   border-radius: 18px;
 }
 
-/* 介紹文字與圖片區域 */
+/* 文字與圖片區域 */
 .research-section {
   border: 3px dashed #1976d2;
   border-radius: 12px;
@@ -39,6 +39,7 @@
   margin-bottom: 28px; /* 底部間距 */
   padding: 24px; /* 內邊距 */
   display: flex;
+  flex-direction: row; /* 水平排列 */
   align-items: flex-start; /* 垂直對齊 */
   gap: 24px; /* 元件之間的間隔 */
 }
@@ -51,13 +52,13 @@
 
 /* 網頁內容圖片 */
 .research-img {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
   border: 2px solid #1976d2;
   border-radius: 10px;
-  background: #eee;
-  flex-shrink: 0;
+  /* background: #4a4545; */
+  flex-shrink: 0; /* 空間不足時，防止圖片縮小 */
 }
 
 /* 標題 */
@@ -103,4 +104,29 @@
 /* 導覽列連結懸停效果 */
 .research-navlink:hover {
   text-decoration: underline;
+}
+
+/* 簡報連結 */
+.research-ppt:link {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block; /* 可以排在同一行後可以自訂大小間距 */
+}
+
+/* 已訪問的連結顏色 */
+.research-ppt:visited {
+  color: #1976d2;
+}
+
+/* 簡報連結懸停效果 */
+.research-ppt:hover {
+  color: #002f5e; /* 滑鼠移到簡報連結時改變顏色 */
+  text-decoration: underline; /* 滑鼠移到簡報連結時顯示底線 */
+}
+
+/* 證照圖片 */
+.certificates-img{
+  display: flex;
+  flex-direction: row; /* 水平排列 */
 }

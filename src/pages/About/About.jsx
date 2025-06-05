@@ -24,12 +24,12 @@ function About() {
               </div>
               <ul className="about-list">
                   <li>姓名: 蔡一菁</li>
-                  <li>電話: 0912345678</li>
-                  <li>地址: 台南市</li>
+                  <li>電話: (+886)0930970955 / 0972840563</li>
+                  <li>地址: 台灣 台南市 永康區</li>
                   <li>E-mail: 5b1g0030@stust.edu.tw</li>
                   <li>學校: 南台科技大學 <a href="https://www.stust.edu.tw/">學校網站</a></li>
                   <li>科系: 資訊工程</li>
-                  <li>學歷: 高三</li>
+                  <li>學歷: 五專三年級</li>
                   <li>研究指導老師：許智淵</li>
                   <li>研究主題：影像處理、智能機械</li>
               </ul>

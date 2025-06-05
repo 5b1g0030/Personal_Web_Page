@@ -6,9 +6,9 @@ function Home() {
     <div className="home-container">
       <h1 className="home-title">我的個人網站</h1>
       <div className="button-group">
-        <Link to="/research" className="nav-button">我的研究</Link>
+        <Link to="/research" className="nav-button">關於我</Link>
         <Link to="/projects" className="nav-button">其他專案</Link>
-        <Link to="/about" className="nav-button">自我介紹</Link>
+        <Link to="/about" className="nav-button">基本資料</Link>
       </div>
     </div>
   );
