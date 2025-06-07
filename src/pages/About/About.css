@@ -1,6 +1,6 @@
 /* 網頁整體 */
 .about-page {
-  background-image: url('/img/oranges.png');
+  background-image: url('/img/background/oranges.png');
   background-size: cover; /* 覆蓋整個頁面 */
   background-repeat: no-repeat; /*不重複*/
   background-position: center; /*置中*/
