@@ -18,7 +18,7 @@ function Projects() {
         <a className="a-button" onClick={() => setIframeSrc("https://5b1g0030.github.io/20250320_JavaScript/game.html")}>試管倒水</a>
         <a className="a-button" onClick={() => setIframeSrc("https://5b1g0030.github.io/React_calculator/")}>計算機</a>
         <a className="a-button" onClick={() => setIframeSrc("https://5b1g0030.github.io/20250320_JavaScript/homework.html")}>n*n乘法表</a>
-        <a className="a-button" onClick={() => setIframeSrc("https://www.bing.com")}>井字遊戲</a>
+        <a className="a-button" onClick={() => setIframeSrc("https://5b1g0030.github.io/Tic-Tac-Toe/")}>井字遊戲</a>
         <a className="a-button" onClick={() => setIframeSrc("https://5b1g0030.github.io/2025-react-app/")}>RGB面板</a>
       </nav>
       <div className="gamepad-display">
