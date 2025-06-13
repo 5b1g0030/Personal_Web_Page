@@ -64,7 +64,11 @@ function About() {
           </div>
 
           {/* ✅ 圖片從 public 資料夾引入 */}
-          <img src="./img/p.png" alt="Portrait" className="about-image" />
+          <div className='about-images'>
+            <img src='./img/Myimg.jpg' alt='個人照片' className='about-image-Myimg'></img>
+            <img src="./img/p.png" className="about-image-p" />
+          </div>
+          
         </div>
       </div>
     </div>
