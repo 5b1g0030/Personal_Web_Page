@@ -10,7 +10,6 @@ import Information from './pages/Research/Information';
 
 function App() {
   return (
-    // <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         {/* 個路由連結目的指定(每個文字對應的頁面) */}
         <Route path="/" element={<Home />} />
@@ -19,7 +18,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/information" element={<Information />} />
       </Routes>
-    //</BrowserRouter>
   );
 }
 

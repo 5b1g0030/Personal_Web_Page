@@ -16,24 +16,6 @@ function Research() {
         </nav>
         <div className="research-container">
 
-          {/* 範例：滑鼠移到這段文字時顯示圖片 */}
-          {/* <div style={{ display: 'inline-block', position: 'relative' }}>
-            <div
-              onMouseEnter={() => setShowImg('ex')}
-              onMouseLeave={() => setShowImg(null)}
-              className='show-img-text'
-            >
-              範例
-            </div>
-
-            {showImg==='ex' && (
-              <div className='show-img-div'>
-                <img className='show-img' src="./img/documents/111-2_Elite.jpg" alt="展示圖片" width={400} />
-              </div>
-            )}
-
-          </div> */}
-
           {/* 證照資料 */}
           <div className="research-section column">
             <span className="research-title">證照</span>
@@ -78,17 +60,19 @@ function Research() {
                 <div className='doc-img'>
 
                   {/* 111-2菁英獎 */}
+                  {/* 定位方法: HTML建立定位基準(以這容器為基準)；CSS根據這基準定位到他旁邊 */}
                   <div style={{ display: 'inline-block', position: 'relative' }}>
+                    {/* 滑鼠移入時，紀錄要顯示的圖片名稱；滑鼠移出時，設為null */}
                     <div
                       onMouseEnter={() => setShowImg('111-2E')}
                       onMouseLeave={() => setShowImg(null)}
                       className='show-img-text'
                     >
                       111-2菁英獎
+                    {/* 如果紀錄的名稱相符，則顯示該圖片 */}
                     </div>
-
                     {showImg === '111-2E' && (
-                      <div className='show-img-div up'> {/* up class用來調整圖片位置 */}
+                      <div className='show-img-div'> {/* up class用來調整圖片位置 */}
                         <img className='show-img' src="./img/documents/111-2_Elite.jpg" alt="111-2菁英獎" width={400} />
                       </div>
                     )}
@@ -105,7 +89,7 @@ function Research() {
                     </div>
 
                     {showImg === '112-1E' && (
-                      <div className='show-img-div up'> {/* up class用來調整圖片位置 */}
+                      <div className='show-img-div'> {/* up class用來調整圖片位置 */}
                         <img className='show-img' src="./img/documents/112-1_Elite.jpg" alt="112-1菁英獎" width={400} />
                       </div>
                     )}
@@ -122,7 +106,7 @@ function Research() {
                     </div>
 
                     {showImg === '112-2E' && (
-                      <div className='show-img-div up'> {/* up class用來調整圖片位置 */}
+                      <div className='show-img-div'> {/* up class用來調整圖片位置 */}
                         <img className='show-img' src="./img/documents/112-2_Elite.jpg" alt="112-2菁英獎" width={400} />
                       </div>
                     )}
@@ -139,7 +123,7 @@ function Research() {
                     </div>
 
                     {showImg === '113-1E' && (
-                      <div className='show-img-div up'> {/* up class用來調整圖片位置 */}
+                      <div className='show-img-div'> {/* up class用來調整圖片位置 */}
                         <img className='show-img' src="./img/documents/113-1_Elite.jpg" alt="113-1菁英獎" width={400} />
                       </div>
                     )}

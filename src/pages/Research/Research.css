@@ -1,19 +1,14 @@
 /* 背景圖片 */
 .research-bg {
-  background-image: url('/img/background/background6.jpg');
-  /* 背景圖片 */
-  background-size: cover;
-  /* 覆蓋整個頁面 */
-  background-repeat: no-repeat;
-  /*不重複*/
-  background-position: center;
-  /*置中*/
+  background-image: url('/img/background/background6.jpg');  /* 背景圖片 */
+  background-size: cover;  /* 覆蓋整個頁面 */
+  background-repeat: no-repeat;  /*不重複*/
+  background-position: center;  /*置中*/
   min-height: 100vh;
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  /* 左側齊平 */
+  align-items: flex-start;  /* 左側齊平 */
 }
 
 /* 包住導覽列與內容，確保左側齊平 */
@@ -23,8 +18,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  /* 左側齊平 */
+  align-items: flex-start;  /* 左側齊平 */
 }
 
 /* 網頁內容 */
@@ -42,17 +36,12 @@
   border: 3px dashed #1976d2;
   border-radius: 12px;
   background: #fff;
-  margin-bottom: 28px;
-  /* 底部間距 */
-  padding: 24px;
-  /* 內邊距 */
+  margin-bottom: 28px;  /* 底部間距 */
+  padding: 24px;  /* 內邊距 */
   display: flex;
-  flex-direction: row;
-  /* 水平排列 */
-  align-items: flex-start;
-  /* 垂直對齊 */
-  gap: 24px;
-  /* 元件之間的間隔 */
+  flex-direction: row;  /* 水平排列 */
+  align-items: flex-start;  /* 垂直對齊 */
+  gap: 24px;  /* 元件之間的間隔 */
 }
 
 /* 介紹文字與圖片區域 */
@@ -68,8 +57,7 @@
   object-fit: cover;
   border: 2px solid #1976d2;
   border-radius: 10px;
-  flex-shrink: 0;
-  /* 空間不足時，防止圖片縮小 */
+  flex-shrink: 0;  /* 空間不足時，防止圖片縮小 */
 }
 
 /* 標題 */
@@ -78,8 +66,7 @@
   font-weight: bold;
   font-size: 1.5em;
   text-decoration: none;
-  display: inline-block;
-  /*排在同一行後可以自訂大小間距*/
+  display: inline-block;  /*排在同一行後可以自訂大小間距*/
 }
 
 /* 副標題 */
@@ -94,38 +81,30 @@
 /* 副標題集合 */
 .research-small-title-group {
   display: flex;
-  flex-direction: column;
-  /* 水平排列 */
-  gap: 10px;
-  /* 元件之間的間隔 */
+  flex-direction: column;  /* 水平排列 */
+  gap: 10px;  /* 元件之間的間隔 */
   margin-left: 30px; /* 往內縮行 */
 }
 
 /* 標題連結-滑鼠懸停效果 */
 .research-title-link:hover {
-  color: #004183;
-  /* 滑鼠移到標題時改變顏色 */
-  text-decoration: underline;
-  /* 滑鼠移到標題時顯示底線 */
+  color: #004183;  /* 滑鼠移到標題時改變顏色 */
+  text-decoration: underline;  /* 滑鼠移到標題時顯示底線 */
 }
 
 /* 導覽列樣式 */
 .research-navbar {
   width: 300px;
   height: 70px;
-  box-sizing: border-box;
-  /* 設定寬高時，包含邊框和內邊距 */
+  box-sizing: border-box;  /* 設定寬高時，包含邊框和內邊距 */
   display: flex;
   gap: 32px;
-  justify-content: center;
-  /* 水平對齊 */
-  align-items: center;
-  /* 垂直對齊 */
+  justify-content: center;  /* 水平對齊 */
+  align-items: center;  /* 垂直對齊 */
   border: 5px solid #5eaeff;
   background: #fff;
   border-radius: 12px;
-  margin-bottom: 30px;
-  /* 與內容區塊間距 */
+  margin-bottom: 30px;  /* 與內容區塊間距 */
 }
 
 /* 導覽列連結 */
@@ -148,8 +127,7 @@
   color: #1976d2;
   text-decoration: none;
   font-weight: bold;
-  display: inline-block;
-  /* 可以排在同一行後可以自訂大小間距 */
+  display: inline-block;  /* 可以排在同一行後可以自訂大小間距 */
 }
 
 /* 已訪問的連結顏色 */
@@ -159,21 +137,18 @@
 
 /* 簡報連結懸停效果 */
 .research-ppt:hover {
-  color: #002f5e;
-  /* 滑鼠移到簡報連結時改變顏色 */
-  text-decoration: underline;
-  /* 滑鼠移到簡報連結時顯示底線 */
+  color: #002f5e;  /* 滑鼠移到簡報連結時改變顏色 */
+  text-decoration: underline;  /* 滑鼠移到簡報連結時顯示底線 */
 }
 
 /* 證件圖片排列 */
 .doc-img {
   display: flex;
-  flex-direction: row;
-  /* 水平排列 */
-  gap: 16px;
-  /* 元件之間的間隔 */
+  flex-direction: row;  /* 水平排列 */
+  gap: 16px;  /* 元件之間的間隔 */
 }
 
+/* 證件圖片框線 */
 .doc-img-border{
   border: 3px solid #1461ad;
   border-radius: 10px;
@@ -192,27 +167,13 @@
 
 /* 圖片展示浮動視窗-div容器 */
 .show-img-div {
-  position: absolute;
-  /* 絕對定位(相對於父元素) */
-  left: 100%;
-  /* 顯示在右邊 */
-  top: 0px;
-  /* 往上移 */
-  z-index: 9999;
-  /* 確保浮動窗在最上層 */
-  /* background: #fff;
-  border: 2px solid #ccc; */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  /* 添加陰影效果 */
-  margin-top: 8px;
-  /* 與元素的上間距 */
-}
-
-/* 往上顯示的樣式 */
-.show-img-div.up {
-  top: auto;
+  position: absolute;  /* 絕對定位(相對於父元素) */
+  left: 100%;  /* 顯示在右邊 */
+  top: auto;  /* 往上移 */
   bottom: 0;
-  /* 或 bottom: -40px; 視需求微調 */
+  z-index: 9999;  /*確保浮動窗在最上層*/
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);  /* 添加陰影效果 */
+  margin-top: 8px;  /* 與元素的上間距 */
 }
 
 /* 圖片展示浮動視窗-文字 */

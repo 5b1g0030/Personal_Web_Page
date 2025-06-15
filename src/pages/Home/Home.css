@@ -34,13 +34,13 @@
     border-radius: 999px; /*圓角*/
     text-decoration: none; /*去掉超連結底線*/
     font-size: 1.5rem;
-    transition: all 0.2s ease; /*按鈕放大動畫*/
-    box-shadow: 0 0 0 transparent; /**光暈效果初始化*/
+    transition: all 0.2s ease; /*按鈕放大動畫(所有屬性都可套用、持續時間0.2s、慢-快-慢的方式播放)*/
+    box-shadow: 0 0 0 transparent; /*光暈效果初始化(0水平位移、0垂直位移、0模糊半徑、透明陰影)*/
   }
   
   /* 滑鼠移動按鈕上時的動畫 */
   .nav-button:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /*將元素放大到原本的 1.05 倍大*/
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   }
   

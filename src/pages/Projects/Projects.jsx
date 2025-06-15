@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import "./Projects.css"; // 引用css
 
 function Projects() {
-  const [iframeSrc, setIframeSrc] = useState("");
-  const defaultImg = './img/background/background1.webp';
+  const [iframeSrc, setIframeSrc] = useState(""); // 用於存儲iframe的src
+  const defaultImg = './img/background/background1.webp'; // 預設背景圖片
 
   return (
     <div className="project-bg">
