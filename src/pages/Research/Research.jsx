@@ -72,7 +72,7 @@ function Research() {
                     {/* 如果紀錄的名稱相符，則顯示該圖片 */}
                     </div>
                     {showImg === '111-2E' && (
-                      <div className='show-img-div'> {/* up class用來調整圖片位置 */}
+                      <div className='show-img-div'>
                         <img className='show-img' src="./img/documents/111-2_Elite.jpg" alt="111-2菁英獎" width={400} />
                       </div>
                     )}
@@ -89,7 +89,7 @@ function Research() {
                     </div>
 
                     {showImg === '112-1E' && (
-                      <div className='show-img-div'> {/* up class用來調整圖片位置 */}
+                      <div className='show-img-div'>
                         <img className='show-img' src="./img/documents/112-1_Elite.jpg" alt="112-1菁英獎" width={400} />
                       </div>
                     )}

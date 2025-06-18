@@ -30,13 +30,16 @@ function Projects() {
             width="100%"
             height="100%"
             style={{ border: "none", borderRadius: "15px", backgroundSize: "10px" }}
+            allowFullScreen
           />
+          
         ) : (
           <img
             src={defaultImg}
             alt="預設背景"
             style={{width: "100%", height: "100%", objectFit: "cover", borderRadius: "15px"}}
           />
+          
         )}
       </div>
     </div>

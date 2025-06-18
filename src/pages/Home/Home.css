@@ -9,6 +9,7 @@
   justify-content: center; /* ⬅️ 垂直置中 */
   height: 100vh;
   text-align: center;
+  padding: 1rem; /* 避免黏邊 */
 }
 
   /* 網站標題 */
@@ -43,4 +44,27 @@
     transform: scale(1.05); /*將元素放大到原本的 1.05 倍大*/
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   }
+
+/* 響應式網頁設定 */
+@media (max-width: 768px) {
+  /* 整體頁面 */
+  .home-title {
+    font-size: 3rem;
+    padding: 0 1rem; /* 防止貼邊 */
+  }
+
+  /* 選單按鈕-排列 */
+  .button-group {
+    flex-direction: column; /* 改成垂直排列 */
+    gap: 1.5rem; /* 加大垂直間距 */
+  }
   
+  /* 選單按鈕-外觀 */
+  .nav-button {
+    font-size: 1.5rem; /* 字型大小 */
+    padding: 1rem 2rem;
+    width: 80%;           /* 每個按鈕佔 80% 寬度 */
+    max-width: 300px;     /* 限制最大寬度 */
+    margin: 0 auto;       /* 水平置中 */
+  }
+}

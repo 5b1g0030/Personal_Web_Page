@@ -7,12 +7,13 @@
     background-position: center;
     display: flex;
     flex-direction: column;
+    padding: 1rem; /* 避免黏邊 */
 }
 
 /* 遊戲機螢幕 */
 .gamepad-display{
-    width: 170vh;
-    height: 100vh;
+    width: 90vw;
+    height: 80vh;
     margin: 0 auto;
     margin-top: 40px;
     border: 5px solid #3b3b3b;
@@ -69,3 +70,36 @@
 .link-button:hover{
     text-decoration: underline;
 }
+
+/* 響應式網頁設定 */
+@media (max-width: 1500px) {
+    /* 內容顯示區 */
+    .gamepad-display {
+      width: 90vw;         /* 裝置寬度的 90% */
+      height: 70vh;        /* 比例調整，不要佔滿整個手機畫面 */
+      margin-top: 20px;
+    }
+    
+    /* 按鈕選單 */
+    .button-pad {
+      flex-wrap: wrap;     /* 按鈕換行 */
+      gap: 12px;
+      padding: 10px;
+    }
+    
+    /* 連結按鈕 */
+    .a-button {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+    
+    /* 導覽列 */
+    .nav-link {
+      align-items: center;
+      gap: 10px;
+      width: 90%;
+      font-size: 1rem;
+      padding: 10px;
+    }
+  }
+  

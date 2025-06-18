@@ -78,7 +78,8 @@
 
 /* 圖片p.png */
 .about-image-p {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   height: auto;
   margin-left: 2rem;
   object-fit: contain; /* 確保圖片不會被拉伸 */
@@ -88,7 +89,8 @@
 .about-image-Myimg {
   border: 5px solid rgb(255, 167, 67);
   border-radius: 10px; /* 圓角 */
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   height: auto;
   margin-left: 2rem;
   object-fit: contain; /* 確保圖片不會被拉伸 */
@@ -123,4 +125,48 @@
   font-size: 1.2rem;
   padding-left: 1.5rem;
   list-style-type: disc;
+}
+
+/*響應式網頁設定*/
+@media (max-width: 768px) {
+  /* 內容區塊 */
+  .about-box {
+    flex-direction: column;         /* 主內容由橫排改成直排 */
+    align-items: center;            /* 置中內容 */
+    padding: 1rem;
+  }
+
+  /* 圖片 */
+  .about-images {
+    margin-left: 0;                 /* 取消原本的左邊距(避免被擠出畫面) */
+    flex-direction: row;           /* 讓兩張圖變橫向排 */
+    flex-wrap: wrap;               /* 若不夠寬可換行 */
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .about-image-Myimg,
+  .about-image-p {
+    width: 45vw;                   /* 相對寬度，約佔 45% 螢幕 */
+    margin-left: 0;
+  }
+
+  .about-title {
+    font-size: 1.7rem;
+  }
+
+  .about-list {
+    font-size: 1rem;
+    padding-left: 1rem;
+  }
+
+  .about-nav {
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .about-nav a {
+    font-size: 1rem;
+  }
 }

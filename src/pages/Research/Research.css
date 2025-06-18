@@ -189,3 +189,86 @@
   color: #004183;
   text-decoration: underline;
 }
+
+/* 響應式網頁設定 */
+@media (max-width: 768px) {
+  /*背景圖片*/
+  .research-bg {
+    padding: 1rem;
+    align-items: center;
+  }
+
+  /* 網頁整體 */
+  .research-inner {
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  /* 導覽列 */
+  .research-navbar {
+    width: 100%;
+    height: auto;
+    gap: 1.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  /* 資料內容區 */
+  .research-container {
+    padding: 1rem;
+  }
+
+  /* 證照資料 */
+  .research-section {
+    flex-direction: column;   /* 內容改為直排 */
+    align-items: center;
+  }
+
+  /* 機器人圖片 */
+  .research-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* 證照圖片排版 */
+  .doc-img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* 證照圖片框線 */
+  .doc-img-border {
+    width: 90%;
+    max-width: 250px;
+  }
+
+  /* 菁英獎圖片排版 */
+  .show-img-div {
+    position: static; /* 讓圖片顯示在原位置 */
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /* 菁英獎圖片 */
+  .show-img {
+    width: 90vw;
+    max-width: 300px;
+  }
+
+  /* 影片播放區 */
+  iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  /* 學習經歷內部小標題 */
+  .research-small-title-group {
+    margin-left: 0;
+  }
+
+  /* 學業成績文字 */
+  .doc-img-text {
+    margin-left: 0;
+  }
+}
