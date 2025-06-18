@@ -61,7 +61,29 @@ function About() {
                 <li>製作屬於自己的機器人</li>
               </ul>
             </section>
+
+            {/* 課程心得 */}
+            <section className="about-section">
+              <div className="about-title">
+                <div className="orange-bar"></div>
+                <span>對「網頁設計」的課程心得</span>
+              </div>
+              <div style={{ fontSize: '1.2rem', lineHeight: '1.6', fontWeight: 'bold', color: '#003366'}}>
+                在這門課程，我學會怎麼使用HTML,CSS,Javascript來設計自己的網站，
+                過程中使用ai輔助寫程式，藉此學習到更多的程式語法和技巧。
+                <br />
+                老師在課堂上把各種概念講得很清楚，有時也會補充一些在實作上會用到的工具，
+                並教導我們如何使用這些工具來提升開發效率。
+                <br />
+                這門課讓我對網頁的前端開發有了更深入的了解，從實際學習到的知識量來看，
+                我覺得這門課程的內容非常充實。
+              </div>
+              
+            </section>
           </div>
+
+          
+         
 
           {/* ✅ 圖片從 public 資料夾引入 */}
           <div className='about-images'>
